@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="matthew neward">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Form Fields</title>
+</head>
+<body>
+
+    <form action ="results.html" method="GET">
+        <div> 
+            <label> 
+                First Name
+                <input type="text" name="firstname" id="firstname">
+            </label>
+        </div>
+        <div> 
+            <label>
+                Email
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </label>
+        </div>
+        <div>
+            <label>
+                # of pets
+                <input type="number" name="pets" id="pets" min="0" max="10" step="1" placeholder="how many pets do you have?" required>
+            </label>
+        </div>
+        <div>
+            <label>
+                Birthday
+                <input type="date" name="date" id="date" required min="2022-01-01">
+            </label>
+        </div>
+        <div>
+            <label for="phoneNumber"> phone</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber">
+        </div>
+        <div>
+            Favorite Season: 
+        </div>
+        <div>
+            
+            <label>
+                Winter
+                <input type="checkbox" name="Winter" id="Winter"> 
+                <style>
+                    input[type=checkbox]:focus {
+                    background-color: lightblue;
+                    } 
+                </style>
+            </label>
+        </div>
+        <div>
+            <label>
+                Summer
+                <input type="checkbox" name="Summer" id="Summer">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                User Name
+                <input type="text" name="username" is="username" placeholder="Username" required>
+            </label>
+        </div>
+        <div>
+            are you a cat or dog person?
+            <label>
+                cat
+                <input type="radio" name="preference" id="cat" value="Cat">
+            </label>
+            <label>
+                dog
+                <input type="radio" name="preference" id="dog" value="Dog">
+            </label>
+            <label>
+                neither
+                <input type="radio" name="preference" id="neither" value="Neither">
+            </label>
+        </div>
+        <div>
+            <label for="faveDay"> Favorite Weekday</label>
+            <select name="faveDay" id="faveDay" multiple>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday"> Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+        </div>
+        <div>
+            <label>
+                Password
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </label>
+        </div>
+        <div>
+            <textarea name="opinion" id="opinion"> Tell us what you think</textarea>
+        </div>
+        <div> 
+            <label for="url"> URL</label>
+            <input type="url" name="weburl" id="weburl">
+        </div>
+        <div>
+            <label for="favecolor"> Favorite Color</label>
+            <input type="color" name="favecolor" id="favecolor">
+        </div>
+        <div>
+            <input type="hidden" name="sessionId" is="sessionId"
+            value="secretRandomNumberUsedtoManageTheSession">
+        </div>
+        <div> 
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <div>
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <input type="file" name="fileUpload" id="fileUpload">
+        </form>
+    </div>
+</body>
+</html>

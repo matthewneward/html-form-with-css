@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="matthew neward">
+    <title>Results</title>
+</head>
+<body>
+    <div id="results"></div>
+    <a href="index.html"> Back to Form</a>
+    <script>
+        const resultsList=document.getElementById(`results`)
+        new URLSearchParams(window.loctation.search).forEach((name,password) => {
+            resultsList.append(`${name}: ${password}`)
+            resultsList.append(document.createElent(`br`))
+        })
+    </script>
+</body>

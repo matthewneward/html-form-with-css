@@ -1,0 +1,39 @@
+html{
+    height:100%;
+    width:100%;
+}
+
+body{
+    background-image: url(../images/sunshine.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#firstname{
+    font-weight: bold;
+    color: rgb(221, 59, 18);
+}
+
+#email, #pets{
+    font-weight:bold; 
+    color: rgb(12, 28, 85)
+}
+
+#date{
+    color:rgb(119, 10, 10)
+}
+
+
+input[type=text]:focus, input[type=email]:focus , input[type=tel]:focus, input[type=password]:focus {
+    background-color: rgb(236, 207, 134);
+    
+    padding: 4px 2px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+div{
+    background-color: gold;
+    border: 2px solid rgb(224, 216, 216);
+    width: 30%;
+} 
